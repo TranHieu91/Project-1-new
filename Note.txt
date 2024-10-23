@@ -1,1 +1,2 @@
 bấm phím shift alt mũi tên xuống để sao chép thêm 1 dòng xuống dưới
+ul>li*5>a{Home} là tạo 5 thẻ li trong bên trong thẻ ul và có nội dung Home
