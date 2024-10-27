@@ -2,27 +2,103 @@
     box-sizing: border-box;
 }
 
+:root { /* :root là gốc tương đương với html */
+
+    --primary-color: #0F1B4C;
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
     font-size: 1.6rem;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
 /* COMMON (DUNG CHUNG) */
-.content{
+a {
+    text-decoration: none;
+}
+.content {
     width: 1110px;
+    max-width: calc(100% - 48px); /* nếu trình duyệt nhỏ hơn 1110px thì nội dung sẽ bị tràn sang ngoài, nên lúc này nó sẽ ăn max-width là 100% kích thước thật của trình duyệt và nội dung không bị tràn ra bên ngoài */
     margin-left: auto;
     margin-right: auto;
 }
 
+.btn {
+    display: inline-block;
+    min-width: 98px;
+    padding: 18px 16px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: #FFF;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
 /* HEADER */
-.header{
+.header {
     background: #E6F0FF;
     height: 100vh;
 }
-.navbar{
+.navbar {
     display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: 50px;
+}
+
+.navbar ul a {
+    color: #4F5361;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 8px 14px;
+}
+
+.navbar ul a:hover {
+    text-decoration: underline;
+}
+
+.navbar .actions {
+    margin-left: auto;
+}
+
+.navbar .action_link{
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.navbar .action-btn {
+    padding: 13px 16px;
+    margin-left: 18px;
+}
+
+.hero {
+    margin-top: 130px;
+}
+
+.hero .sub-title {
+    color: #687690;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.018rem;
+}
+
+.hero .title {
+    color: #000336;
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 7.6rem; /* 118.75% */
 }
