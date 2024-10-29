@@ -2,9 +2,10 @@
     box-sizing: border-box;
 }
 
-:root { /* :root là gốc tương đương với html */
+:root {
+    /* :root là gốc tương đương với html */
 
-    --primary-color: #0F1B4C;
+    --primary-color: #0f1b4c;
 }
 
 html {
@@ -13,7 +14,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* COMMON (DUNG CHUNG) */
@@ -22,7 +23,9 @@ a {
 }
 .content {
     width: 1110px;
-    max-width: calc(100% - 48px); /* nếu trình duyệt nhỏ hơn 1110px thì nội dung sẽ bị tràn sang ngoài, nên lúc này nó sẽ ăn max-width là 100% kích thước thật của trình duyệt và nội dung không bị tràn ra bên ngoài */
+    max-width: calc(
+        100% - 48px
+    ); /* nếu trình duyệt nhỏ hơn 1110px thì nội dung sẽ bị tràn sang ngoài, nên lúc này nó sẽ ăn max-width là 100% kích thước thật của trình duyệt và nội dung không bị tràn ra bên ngoài */
     margin-left: auto;
     margin-right: auto;
 }
@@ -33,7 +36,7 @@ a {
     padding: 18px 16px;
     border-radius: 8px;
     background: var(--primary-color);
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-size: 1.4rem;
 }
@@ -42,10 +45,10 @@ a {
     opacity: 0.8;
 }
 
-/* HEADER */
+/* ======================= HEADER =======================*/
 .header {
     /* position: relative; */
-    background: #E6F0FF;
+    background: #e6f0ff;
     height: 100vh;
 }
 .navbar {
@@ -60,7 +63,7 @@ a {
 }
 
 .navbar ul a {
-    color: #4F5361;
+    color: #4f5361;
     font-size: 1.4rem;
     font-weight: 500;
     padding: 8px 14px;
@@ -74,7 +77,7 @@ a {
     margin-left: auto;
 }
 
-.navbar .action_link{
+.navbar .action_link {
     color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 500;
@@ -112,7 +115,7 @@ a {
 
 .hero .desc {
     margin-top: 30px;
-    color: #5A6473;
+    color: #5a6473;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 3.2rem; /* 177.778% */
@@ -127,4 +130,13 @@ a {
     position: absolute;
     right: calc((100vw - 1110px) / 2 - 100px);
     bottom: 0;
+}
+
+/* ======================= Client =======================*/
+.clients {
+    margin-top: 122px;
+}
+
+.clients .row {
+    display: flex;
 }
