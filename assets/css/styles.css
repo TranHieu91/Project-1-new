@@ -47,7 +47,6 @@ a {
 
 /* ======================= HEADER =======================*/
 .header {
-    /* position: relative; */
     background: #e6f0ff;
     height: 100vh;
 }
@@ -89,7 +88,6 @@ a {
 }
 
 .hero {
-    position: relative;
     margin-top: 130px;
 }
 
