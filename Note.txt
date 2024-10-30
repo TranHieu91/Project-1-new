@@ -2,3 +2,4 @@ bấm phím shift alt mũi tên xuống để sao chép thêm 1 dòng xuống d�
 ul>li*5>a{Home} là tạo 5 thẻ li trong bên trong thẻ ul và có nội dung Home
 a*2{sign in} la tạo 2 thẻ a có nội dung sign in
 .hero>.info>p.sub-title+h1.title+p.desc+a.btn là tạo thẻ cha .hero bên trong có thẻ con .info. rồi bên trong .info sẽ tạo 4 thẻ con p.sub-title, h1.title, p.desc, a.btn
+.guides>.content>h2.sub-title+p.desc tạo thẻ cha .guides bên trong có thẻ con .content rồi bên trong có thẻ h2.sub-title và thẻ p.desc

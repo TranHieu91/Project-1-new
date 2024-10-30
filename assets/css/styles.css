@@ -23,9 +23,7 @@ a {
 }
 .content {
     width: 1110px;
-    max-width: calc(
-        100% - 48px
-    ); /* nếu trình duyệt nhỏ hơn 1110px thì nội dung sẽ bị tràn sang ngoài, nên lúc này nó sẽ ăn max-width là 100% kích thước thật của trình duyệt và nội dung không bị tràn ra bên ngoài */
+    max-width: calc(100% - 48px); /* nếu trình duyệt nhỏ hơn 1110px thì nội dung sẽ bị tràn sang ngoài, nên lúc này nó sẽ ăn max-width là 100% kích thước thật của trình duyệt và nội dung không bị tràn ra bên ngoài */
     margin-left: auto;
     margin-right: auto;
 }
@@ -157,3 +155,41 @@ a {
     align-items: center;
     margin-top: 96px;
 }
+
+/* ======================= GUIDES =======================*/
+.guides {
+    margin-top: 200px;
+}
+
+.guides .sub-title {
+    position: relative;
+    color: #000339;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.guides .sub-title::before {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+}
+
+.guides .desc {
+    width: 460px;
+    max-width: 100%;
+    margin: 20px auto 0;
+    color: #5A6473;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.9; /* 187.5% */
+}
+
